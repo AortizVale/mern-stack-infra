@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const URI = process.env.URI || 'mongodb+srv://mabel:david@clusteroptica.e6pz8i0.mongodb.net/?retryWrites=true&w=majority';
+const URI = process.env.URI;
 
 mongoose.connect(URI)
     .then(db => console.log('DB is connected'))
